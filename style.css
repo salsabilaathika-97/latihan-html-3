@@ -2,11 +2,11 @@
 
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: var(--color-default);
+    color: #212529;
   }
 
 a {
-    color: var(--color-primary);
+    color: #ce1212;
     text-decoration: none;
 }
 
@@ -18,6 +18,44 @@ a:hover {
 h1 {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
+
+/* Section & Section Header */
+
+section {
+    overflow: hidden;
+    padding: 80px 0;
+}
+
+.section-bg {
+    background-color: #eee;
+}
+
+.section-header {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.section-header h2 {
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    color: #7f7f90;
+    text-transform: uppercase;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.section-header p {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 400;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+.section-header p span {
+    color: #ce1212;
+  }
 
 /* Header CSS */
 
@@ -44,7 +82,22 @@ h1 {
 }
 
 .header .logo h1 span {
-    color: var(--color-primary);
+    color: #ce1212;
+}
+
+.header .btn-book-a-table, .header .btn-book-a-table:focus {
+    font-size: 14px;
+    color: white;
+    background: #ce1212;
+    padding: 8x 20px;
+    margin-left: 30px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.header .btn-book-a-table:hover, .header .btn-book-a-table:focus:hover {
+    color: white;
+    background: rgba(206, 18, 18, 0.8);
 }
 
 /* Navbar CSS */
@@ -94,7 +147,7 @@ h1 {
     height: 2px;
     bottom: -6px;
     left: 0;
-    background-color: var(--color-primary);
+    background-color: #ce1212;
     visibility: hidden;
     width: 0px;
     transition: all 0.3s ease-in-out 0s;
